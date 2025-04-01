@@ -4,7 +4,7 @@ job:
   command:
     - "sh"
     - "-c"
-    - "echo Job rodando && sleep 3600"
+    - "echo Job rodando && sleep 5"
 
 cronjob:
   enabled: true
@@ -13,4 +13,4 @@ cronjob:
   command:
     - "sh"
     - "-c"
-    - "echo CronJob rodando && sleep 3600"
+    - "echo CronJob rodando && sleep 5 "
