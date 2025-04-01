@@ -9,7 +9,7 @@ spec:
       containers:
         - name: job
           image: {{ .Values.job.image }}
-          command: {{ .Values.job.command }}
+          command: {{ toJson .Values.job.command }}
       restartPolicy: Never
   backoffLimit: 1
 {{- end }}

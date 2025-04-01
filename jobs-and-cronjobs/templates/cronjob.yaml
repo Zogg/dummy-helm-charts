@@ -12,6 +12,6 @@ spec:
           containers:
             - name: cronjob
               image: {{ .Values.cronjob.image }}
-              command: {{ .Values.cronjob.command }}
+              command: {{ toJson .Values.cronjob.command }}
           restartPolicy: Never
 {{- end }}
