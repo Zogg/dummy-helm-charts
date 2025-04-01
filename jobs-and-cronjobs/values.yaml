@@ -1,10 +1,16 @@
 job:
   enabled: true
   image: busybox
-  command: ["sh", "-c", "echo Job rodando && sleep 3600"]
+  command:
+    - "sh"
+    - "-c"
+    - "echo Job rodando && sleep 3600"
 
 cronjob:
   enabled: true
   schedule: "*/1 * * * *"
   image: busybox
-  command: ["sh", "-c", "echo CronJob rodando && sleep 3600"]
+  command:
+    - "sh"
+    - "-c"
+    - "echo CronJob rodando && sleep 3600"
