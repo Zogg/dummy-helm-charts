@@ -4,7 +4,6 @@ kind: CronJob
 metadata:
   name: exemplo-cronjob
   link.argocd.argoproj.io/external-link: https://app.datadoghq.eu/dashboard/mb3-tek-pmw/ml-triton?fromUser=true&refresh_mode=paused&tpl_var_endpoint%5B0%5D=http%3A%2F%2F172.20.85.45%3A8080%2Fmetrics&tpl_var_endpoint%5B1%5D=http%3A%2F%2F172.20.27.11%3A8002%2Fmetrics&from_ts=1761606106193&to_ts=1761625545383&live=false&tile_focus=7067097270617825
-  link.argocd.argoproj.io/external-link: https://experiments.ml.carvertical.org/
 spec:
   schedule: "{{ .Values.cronjob.schedule }}"
   jobTemplate:
