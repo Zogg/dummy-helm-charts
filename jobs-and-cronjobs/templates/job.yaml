@@ -3,6 +3,8 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: exemplo-job
+  annotations:
+    link.argocd.argoproj.io/external-link: "https://www.google.com"
 spec:
   template:
     spec:
