@@ -4,7 +4,7 @@ kind: Job
 metadata:
   name: exemplo-job
   annotations:
-    link.argocd.argoproj.io/external-link: "https://www.google.com"
+    link.argocd.argoproj.io/external-link: "https://experiments.ml.carvertical.org/"
 spec:
   template:
     spec:
