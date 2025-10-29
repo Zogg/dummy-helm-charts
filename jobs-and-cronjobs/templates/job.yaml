@@ -4,7 +4,7 @@ kind: Job
 metadata:
   name: exemplo-job
   annotations:
-    link.argocd.argoproj.io/external-link: "https://experiments.ml.carvertical.org/#/models/color-detector/versions/14"
+    link.argocd.argoproj.io/external-link: "https://experiments.ml.carvertical.org/#/models/color-detector/"
 spec:
   template:
     spec:
